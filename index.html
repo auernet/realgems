@@ -7,8 +7,9 @@
 <meta name="description" content="RealGems — Only the Finest. An Antwerp house for exceptional, certified stones. Opening soon." />
 <meta name="theme-color" content="#fbfbfa" />
 
-<link rel="icon" type="image/png" sizes="256x256" href="assets/realgems-icon.png" />
-<link rel="apple-touch-icon" href="assets/realgems-icon.png" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="RealGems — Only the Finest" />
@@ -23,11 +24,11 @@
 <style>
   :root{
     --bg:#fbfbfa; --ink:#222020; --mut:#8a857e;
-    --line:rgba(0,0,0,.14); --glow:rgba(120,150,210,.18);
+    --line:rgba(0,0,0,.14); --glow:rgba(120,150,210,.07);
   }
   body.night{
-    --bg:#0a0a0c; --ink:#f1efe9; --mut:#8f8c82;
-    --line:rgba(255,255,255,.16); --glow:rgba(150,180,255,.16);
+    --bg:#0b0b0d; --ink:#f1efe9; --mut:#8f8c82;
+    --line:rgba(255,255,255,.16); --glow:rgba(178,194,226,.17);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -64,7 +65,7 @@
     width:clamp(96px,13vw,140px);height:auto;display:block;
     animation:breathe 9s ease-in-out infinite alternate;transform-origin:center;
   }
-  body.night .mark{filter:brightness(1.08) saturate(1.04)}
+  body.night .mark{filter:brightness(1.05) drop-shadow(0 6px 26px rgba(120,150,210,.22))}
   @keyframes breathe{from{transform:scale(1)}to{transform:scale(1.055)}}
 
   /* wordmark — Cinzel, matching the RealGems logo (Trajan) */
@@ -106,7 +107,7 @@
     <button class="toggle fade d1" id="toggle" aria-label="Toggle light and dark">&#9790;</button>
 
     <div class="markwrap fade d1">
-      <img class="mark" src="assets/realgems-mark.png" alt="RealGems" width="502" height="710" />
+      <img class="mark" src="assets/realgems-mark.png" alt="RealGems" width="689" height="631" />
     </div>
 
     <div class="wordmark fade d2">RealGems</div>
